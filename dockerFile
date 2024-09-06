@@ -1,0 +1,33 @@
+# Use an official Node.js runtime as the base image
+FROM node:16
+
+# Set the working directory for the backend
+WORKDIR /app
+
+# Copy package.json and package-lock.json to install backend dependencies
+COPY package*.json ./
+
+# Install backend dependencies
+RUN npm install
+
+# Copy the entire backend source code to the container
+COPY . .
+
+# Move to the frontend directory and install dependencies
+WORKDIR /app/client
+
+# Install frontend dependencies
+RUN npm install
+
+# Build the React app for production
+RUN npm run build
+
+# Move back to the root directory for running the backend
+WORKDIR /app
+
+# Expose ports for backend and frontend
+EXPOSE 8080
+EXPOSE 3000
+
+# Run both backend and frontend with npm concurrently
+CMD ["npm", "run", "dev"]
