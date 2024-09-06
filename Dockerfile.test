@@ -1,0 +1,21 @@
+# Use an official Node.js runtime as the base image
+FROM node:16
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the package.json and package-lock.json
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the entire application source code
+COPY . .
+
+# Run tests
+CMD ["npm", "test"]
+
+
+#docker build -f Dockerfile.test -t mern-chat-test .
+#docker run --rm mern-chat-test

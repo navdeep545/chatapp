@@ -6,32 +6,40 @@ The MERN stack which consists of **Mongo DB**, **Express.js**, **Node.js**, and 
 <br/><br/>
 This repo consists of a **Chat Application** built with the MERN stack. I built this sometime back when I was trying to learn the stack and I have left it here for anyone new to the stack so that they can use this repo as a guide.
 <br/><br/>
-This is a full-stack chat application that can be up and running with just a few steps. 
+This is a full-stack chat application that can be up and running with just a few steps.
 Its frontend is built with [Material UI](https://material-ui.com/) running on top of React.
 The backend is built with Express.js and Node.js.
 Real-time message broadcasting is developed using [Socket.IO](https://socket.io/).
 
-### Features
+### Featuresa
 
 This application provides users with the following features
 <br/>
-* Authentication using **JWT Tokens**
-* A **Global Chat** which can be used by anyone using the application to broadcast messages to everyone else.
-* A **Private Chat** functionality where users can chat with other users privately.
-* Real-time updates to the user list, conversation list, and conversation messages
+
+- Authentication using **JWT Tokens**
+- A **Global Chat** which can be used by anyone using the application to broadcast messages to everyone else.
+- A **Private Chat** functionality where users can chat with other users privately.
+- Real-time updates to the user list, conversation list, and conversation messages
 
 #### Screenshots
 
 ##### Global Chat
+
 ![Global Chat](https://i.imgur.com/VkdwAme.png)
 <br/><br/>
+
 ##### Private Chat
+
 ![Private Chat](https://i.imgur.com/jdCBYu4.png)
 <br/><br/>
+
 ##### Login
+
 ![Login](https://i.imgur.com/6iobucn.png)
 <br/><br/>
+
 ##### Register
+
 ![Register](https://i.imgur.com/AMkpl9C.png)
 
 ### How to use
@@ -44,12 +52,11 @@ You can have this application up and running with just a few steps because it ha
 4. Finally, all you have to do is simply run `npm run dev`. If this command fails, try installing the package [concurrently](https://www.npmjs.com/package/concurrently) globally by running `npm install -g concurrently` and then running the `dev` command.
 5. The frontend of the application will be automatically opened in your web browser and you can test it away.
 
-
 ### Things to note
 
-* The frontend is created using [create-react-app](https://github.com/facebook/create-react-app)
-* Database connections in the backend are handled using the [Mongoose ORM](https://mongoosejs.com/)
-* Code quality is ensured using (ESLint)[https://eslint.org/]
+- The frontend is created using [create-react-app](https://github.com/facebook/create-react-app)
+- Database connections in the backend are handled using the [Mongoose ORM](https://mongoosejs.com/)
+- Code quality is ensured using (ESLint)[https://eslint.org/]
 
 ### Disclaimer
 
